@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 102">
+<rect width="55" height="55" rx="10" fill="url(#paint0_radial_0_17)"/>
+<g id="Vector">
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_17" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.5 21.5) rotate(90) scale(241)">
+<stop stop-color="#F0B2FF"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+</defs>
+</svg>

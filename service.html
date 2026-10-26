@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="arcticle в разработке. Следите за обновлениями проекта и запуском сервиса.">
+  <title>arcticle — в разработке</title>
+  <link rel="preload" href="assets/fonts/Inter.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="runner.js" defer></script>
+</head>
+<body class="service-page">
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="arcticle — главная">arcticle</a>
+    <nav class="header-nav" aria-label="Основная навигация">
+      <a href="index.html">О проекте</a>
+      <a href="service.html" aria-current="page">Сервис</a>
+    </nav>
+    <img class="header-social" src="assets/images/social-service.svg" alt="ВКонтакте и Telegram" width="63" height="30">
+  </header>
+
+  <main class="service-main container">
+    <h1><span class="accent">arcticle</span> в разработке</h1>
+    <p class="service-intro">Будем транслировать обновления в наших медиа, первым пользователям дадим плюшки, доступы и личную связь с нами</p>
+    <div class="service-art runner-game" data-state="ready" role="region" tabindex="0" aria-label="Мини-игра с динозавриком" aria-describedby="runner-help">
+      <div class="service-image tinted" aria-hidden="true"><img src="assets/images/service-background.png" alt="" width="740" height="493"></div>
+      <canvas class="runner-canvas" aria-hidden="true"></canvas>
+      <div class="runner-hud">
+        <button class="runner-pause" type="button" hidden>Пауза</button>
+        <p class="runner-score" aria-live="off">Счёт <span id="runner-score">00000</span><span class="runner-best">Рекорд <span id="runner-best">00000</span></span></p>
+      </div>
+      <div class="runner-overlay">
+        <p class="runner-title">Прыгай и пригибайся</p>
+        <button class="runner-start" type="button">Начать игру</button>
+      </div>
+      <p class="runner-status visually-hidden" aria-live="polite"></p>
+      <noscript><p class="runner-no-script">Для игры включите JavaScript.</p></noscript>
+    </div>
+    <div class="runner-controls" role="group" aria-label="Управление динозавриком">
+      <button class="runner-jump" type="button">↑ Прыжок</button>
+      <button class="runner-duck" type="button" aria-pressed="false">↓ Пригнуться</button>
+    </div>
+    <p class="visually-hidden" id="runner-help">Пробел / ↑ / касание — прыжок · Удерживай ↓ — пригнуться</p>
+    <!-- Для сбора адресов замените этот блок на form с адресом обработчика
+         и включите кнопку. Пока адреса никуда не отправляются. -->
+    <div class="email-form" role="group" aria-label="Подписка на обновления">
+      <label class="visually-hidden" for="email">Ваша почта</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="Ваша почта">
+      <span class="email-button-wrap">
+        <img class="email-glow" src="assets/images/email-glow.svg" alt="" width="55" height="55" aria-hidden="true">
+        <button class="email-button" type="button" disabled aria-label="Подписка пока недоступна" title="Подписка пока недоступна">
+          <img src="assets/images/email-arrow.svg" alt="" width="55" height="55">
+        </button>
+      </span>
+    </div>
+  </main>
+</body>
+</html>
